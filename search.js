@@ -30,7 +30,6 @@ function exponentialSearch(sortedArray, value) {
 
     lowerBoundIndex = higherBoundIndex;
     higherBoundIndex = Math.min(higherBoundIndex * 2, sortedArray.length - 1);
-    console.table([lowerBoundIndex, higherBoundIndex]);
   }
 
   let boundedArray = sortedArray.slice(lowerBoundIndex, sortedArray.length);
